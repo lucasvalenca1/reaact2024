@@ -1,0 +1,107 @@
+Great! Based on the additional files you provided, I'll update the README to include information about these files and their roles in the project.
+
+Here's the updated README:
+
+# README: Passing Thoughts
+
+Passing Thoughts is a simple web application that allows users to jot down passing thoughts or ideas. Thoughts are displayed in a list format and automatically disappear after a certain period, adding a transient and ephemeral nature to the experience.
+
+## Table of Contents
+
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Components](#components)
+- [Utilities](#utilities)
+- [Files](#files)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+
+- Add new thoughts with a simple input form.
+- Thoughts automatically disappear after 15 seconds, creating a transient experience.
+- Remove individual thoughts by clicking on a remove button.
+
+## Getting Started
+
+### Prerequisites
+
+Before running the Passing Thoughts application, ensure you have the following installed:
+
+- Node.js and npm (Node Package Manager)
+
+### Installation
+
+1. Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/your-username/passing-thoughts.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd passing-thoughts
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+## Usage
+
+To start the Passing Thoughts application, run the following command:
+
+```bash
+npm start
+```
+
+This will launch the application in your default web browser.
+
+## Components
+
+The Passing Thoughts application consists of the following main components:
+
+### AddThoughtForm
+
+A form component that allows users to input new thoughts. Thoughts can be added by typing in the input field and pressing the "Add" button.
+
+### App
+
+The main application component that manages the state of thoughts. It includes the `AddThoughtForm` component and a list of `Thought` components.
+
+### Thought
+
+Represents an individual thought in the list. Each thought includes a text message and a remove button. Thoughts automatically disappear after 15 seconds.
+
+## Utilities
+
+The `utilities` module provides two utility functions used in the application:
+
+- `generateId`: Generates unique IDs for thoughts.
+- `getNewExpirationTime`: Calculates the expiration time for a new thought.
+
+## Files
+
+- **babel.config.js**: Configuration file for Babel, a JavaScript compiler.
+- **bundle.css**: CSS file containing styles for the application bundle.
+- **index.compiled.js**: Compiled JavaScript file.
+- **index.html**: HTML file serving as the entry point for the application.
+- **index.js**: JavaScript file responsible for rendering the root component of the application.
+- **package-lock.json**: Automatically generated file used to lock dependencies versions.
+- **package.json**: Manifest file containing project metadata and dependencies.
+- **styles.css**: CSS file containing styles for the application.
+- **utilities.js**: JavaScript file containing utility functions for the application.
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to the Passing Thoughts project, feel free to submit a pull request with your changes.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE). Feel free to use and modify this project for your own purposes.
